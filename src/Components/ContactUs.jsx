@@ -9,7 +9,7 @@ const ContactUs = () => {
       <h1 style={{color:'#9d00ff'}}>Contact Us!</h1>
 
           <p>
-            Welcome To Bazi Maar Games!
+            Welcome To Lucky Brust Games!
             <br/>
             If you have any questions about the site,advertising or anything else
             <p style={{color:'#9d00ff'}}>

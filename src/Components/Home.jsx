@@ -18,7 +18,7 @@ function Home() {
     
     <Feature/>
     <Presentation/>
-    <About image={LuckySpin} title="Bazi Maar Games" button='Download App'/>
+    <About image={LuckySpin} title="Lucky Brust Games" button='Download App'/>
     <Contact/>
     
   </div>
