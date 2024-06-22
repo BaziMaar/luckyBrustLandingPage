@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.18b08bb1.css",
-    "main.js": "/static/js/main.44a18083.js",
-    "static/media/backgroundss.png": "/static/media/backgroundss.646c39cb8998bbeb5488.png",
+    "main.css": "/static/css/main.9e48cb0d.css",
+    "main.js": "/static/js/main.1f66c435.js",
+    "static/media/backgrounds.png": "/static/media/backgrounds.e14c5163b9a801cbeef5.png",
     "static/media/presentationf.png": "/static/media/presentationf.c536f68c3fc6c1f64b68.png",
     "static/media/Wingo Logo.png": "/static/media/Wingo Logo.40fce83aa9353088596c.png",
     "static/media/Dragon & Tiger Logo.png": "/static/media/Dragon & Tiger Logo.bd0e6b2ebff5c21a932a.png",
@@ -17,11 +17,11 @@
     "static/media/featuress1.png": "/static/media/featuress1.18855137fd741c5d96b1.png",
     "static/media/miness.png": "/static/media/miness.de184e10a0a3876546a5.png",
     "index.html": "/index.html",
-    "main.18b08bb1.css.map": "/static/css/main.18b08bb1.css.map",
-    "main.44a18083.js.map": "/static/js/main.44a18083.js.map"
+    "main.9e48cb0d.css.map": "/static/css/main.9e48cb0d.css.map",
+    "main.1f66c435.js.map": "/static/js/main.1f66c435.js.map"
   },
   "entrypoints": [
-    "static/css/main.18b08bb1.css",
-    "static/js/main.44a18083.js"
+    "static/css/main.9e48cb0d.css",
+    "static/js/main.1f66c435.js"
   ]
 }

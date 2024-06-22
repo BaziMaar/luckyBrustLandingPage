@@ -15,7 +15,7 @@ const ContactUs = () => {
             <p style={{color:'#9d00ff'}}>
           
           <br />
-          E-mail: support@bazimaargames.com
+          E-mail: support@luckybrustgames.com
         </p>
         <h1>We will reverting you as soon as possible</h1>
         <p>Thank you for contacting us</p>

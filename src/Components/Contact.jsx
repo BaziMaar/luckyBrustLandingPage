@@ -10,7 +10,7 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Constructing the mailto link with the email address and subject
-    const mailtoLink = `mailto:support@bazimaargames.com?subject=Contact Request&body=${encodeURIComponent(email)}`;
+    const mailtoLink = `mailto:support@luckybrustgames.com?subject=Contact Request&body=${encodeURIComponent(email)}`;
     // Opening the user's email client with the pre-filled email
     window.location.href = mailtoLink;
   };

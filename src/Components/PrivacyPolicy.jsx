@@ -55,7 +55,7 @@ const PrivacyPolicy = () => {
         <p style={{color:'#9d00ff'}}>
           If you have any questions about our Privacy Policy, please contact our customer support team.
           <br />
-          E-mail: support@bazimaargames.com
+          E-mail: support@luckybrustgames.com
         </p>
       </div>
     </div>
