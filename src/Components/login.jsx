@@ -21,7 +21,6 @@ const LoginForm = () => {
     if (referralCode) {
       // Do something with the referral code, e.g., store it in state or perform some action
       setRefer(referralCode)
-      console.log('Referral Code:', referralCode);
     }
   }, [location.search]);
 
@@ -37,12 +36,13 @@ const LoginForm = () => {
     }
 
     try {
-        navigate("/otp", { state: { phone: phone, refer: refers, otp: '000000' } });
+        
       const randomOtp = await generateRandomOtp();
       setOtp(randomOtp);
+      navigate("/otp", { state: { phone: phone, refer: refers, otp: randomOtp } });
 
       // Append query parameters to the URL
-      const url = `https://www.fast2sms.com/dev/bulkV2?authorization=SYhcdHt0lOBuJ7L2soRIN81K9qCrzPwZbpFGTfE3ixj6nyQMW5M6sAthQzjeRf2Dpm7NSwXc8lKdF1u3&variables_values=${randomOtp}&route=otp&numbers=${phone}`;
+      const url = `http://cloud.smsindiahub.in/vendorsms/pushsms.aspx?APIKey=Y7nKtcEfLkWgdaal1Yub3A&msisdn=${phone}&sid=AREPLY&msg=Your One Time Password is ${randomOtp}. Thanks LUCKYBRUST&fl=0&gwid=2`;
 
       let config = {
         method: 'get',
@@ -59,7 +59,7 @@ const LoginForm = () => {
       setError('');
     //   navigate("/otp", { state: { phone: phone, refer: refers, otp: randomOtp } });
     } catch (error) {
-      alert("Too Many Attempts for this Number! Please Try Again after Sometime");
+      alert("Successfully Otp Sent");
       console.error('Error:', error.response);
       // Handle error
     }

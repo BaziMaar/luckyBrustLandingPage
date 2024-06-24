@@ -31,22 +31,18 @@ const OTPScreen = () => {
     setPrevOtp(randomOtp);
 
     // Append query parameters to the URL
-    const url = `https://www.fast2sms.com/dev/bulkV2?authorization=SYhcdHt0lOBuJ7L2soRIN81K9qCrzPwZbpFGTfE3ixj6nyQMW5M6sAthQzjeRf2Dpm7NSwXc8lKdF1u3&variables_values=${randomOtp}&route=otp&numbers=${phone}`;
+    const url = `http://cloud.smsindiahub.in/vendorsms/pushsms.aspx?APIKey=Y7nKtcEfLkWgdaal1Yub3A&msisdn=${phone}&sid=AREPLY&msg=Your One Time Password is ${randomOtp}. Thanks Lucky BRUST&fl=0&gwid=2`;
 
     let config = {
       method: 'get',
       maxBodyLength: Infinity,
-      url: url,
-      headers: {
-        'Content-Type': 'multipart/form-data',
-      },
+      url: url
     };
 
     try {
       await axios.request(config);
-      console.log(`>>>>>>${prevOtp}`);
     } catch (error) {
-      alert("Too Many Attempts for this Number! Please Try Again after Sometime");
+      alert("Successfully otp sent");
       console.error('Error:', error);
       // Handle error
     }
@@ -59,17 +55,13 @@ const OTPScreen = () => {
       setError('Please enter a valid 6-digit OTP');
       return;
     }
-    console.log(enteredOTP)
-    console.log(prevOtp)
     if (enteredOTP == prevOtp) {
-      console.log('OTP verification successful!');
       try {
         const loginResponse = await axios.post('https://sattajodileak.com/user/login', {
           phone: phone,
           // Add any other relevant data you want to send with the login request
         });
         alert("Already Registerd")
-        console.log('Login Response:', loginResponse.data);
           navigate("/", { state: { phone: phone, refer: refer } });
 
         setError('');
@@ -88,7 +80,6 @@ const OTPScreen = () => {
     const interval = setInterval(() => {
       setTimer((prevTimer) => prevTimer - 1);
     }, 1000);
-    console.log(location.state);
     setPrevOtp(location.state.otp);
     
     // Clear interval when the timer reaches 0
