@@ -51,7 +51,7 @@ const Signup = () => {
     <div style={{ background: 'black', minHeight: '100vh', color: 'white' }}>
       <header style={{ padding: '16px', display: 'flex', justifyContent: 'center' }}>
         <img
-          src="/images/rocket.png"
+          src="./rocket.png"
           alt="Rocket"
           style={{ width: '100px', height: 'auto' }}
         />

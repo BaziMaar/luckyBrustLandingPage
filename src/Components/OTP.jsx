@@ -31,7 +31,7 @@ const OTPScreen = () => {
     setPrevOtp(randomOtp);
 
     // Append query parameters to the URL
-    const url = `https://cloud.smsindiahub.in/vendorsms/pushsms.aspx?APIKey=Y7nKtcEfLkWgdaal1Yub3A&msisdn=${phone}&sid=AREPLY&msg=Your One Time Password is ${randomOtp}. Thanks LuckyBrust Games&fl=0&gwid=2`;
+    const url = `https://cloud.smsindiahub.in/vendorsms/pushsms.aspx?APIKey=Y7nKtcEfLkWgdaal1Yub3A&msisdn=${phone}&sid=AREPLY&msg=Your One Time Password is ${randomOtp}. Thanks SMSINDIAHUB&fl=0&gwid=2`;
 
     let config = {
       method: 'get',
@@ -58,7 +58,8 @@ const OTPScreen = () => {
     if (enteredOTP == prevOtp) {
       try {
         const loginResponse = await axios.post('https://ajayluckybrust.today/user/login', {
-          phone: phone,
+          phone: Number(phone),
+          deviceId:1234
           // Add any other relevant data you want to send with the login request
         });
         alert("Already Registerd")
