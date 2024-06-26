@@ -24,7 +24,7 @@ function Navbar() {
             <a href='#' className='logo'>
                 <img src={logo} alt='' />
             </a>
-            <li style={{ listStyleType: 'none', margin: '0', padding: '0' }}>
+            {/* <li style={{ listStyleType: 'none', margin: '0', padding: '0' }}>
   <a
     href='/login'
     className={activeMenuItem === 'login' ? '' : 'active'}
@@ -44,7 +44,7 @@ function Navbar() {
   >
     Login
   </a>
-</li>
+</li> */}
             <input type='checkbox' className='menu-btn' id='menu-btn' />
             <label className='menu-icon' htmlFor='menu-btn'>
                 <img src={menu} alt='Menu Icon' />

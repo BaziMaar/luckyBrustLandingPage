@@ -6,7 +6,7 @@ const ContactUs = () => {
     <>
     <Navbar/>
     <div style={{ backgroundColor: 'black', color: 'white', padding: '20px',alignItems:'center',justifyContent:'center',marginTop:30 }}>
-      <h1 style={{color:'#9d00ff'}}>Contact Us!</h1>
+      <h1 style={{color:'#764BA2;'}}>Contact Us!</h1>
 
           <p>
             Welcome To Lucky Brust Games!

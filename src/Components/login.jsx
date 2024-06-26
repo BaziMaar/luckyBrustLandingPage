@@ -78,10 +78,10 @@ const LoginForm = () => {
         }}>
           <div style={{ marginLeft: 'auto' }}>
             <img
-              src="./rocket.png"  // Replace with the actual path of your rocket image
+              src="./logo.png"  // Replace with the actual path of your rocket image
               alt="Rocket"
               style={{
-                width: '100px',  // Adjust the size as needed
+                width: '50px',  // Adjust the size as needed
                 height: 'auto',
               }}
             />
@@ -90,8 +90,8 @@ const LoginForm = () => {
         </header>
         <form onSubmit={handleLogin} >
           <div style={{ marginLeft: '5px', padding: '30px', marginRight: '25px' }}>
-            <h1>My mobile</h1>
-            <p>Please enter your valid phone number<br />We will send you a 4 digit code to verify your account.</p>
+            <h1>My Mobile</h1>
+            <p>Please enter your valid phone number<br />We will send you a 6 digit code to verify your account.</p>
             <div style={{
               width: '100%',
               marginTop: '50px',
