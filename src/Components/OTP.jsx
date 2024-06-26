@@ -31,7 +31,7 @@ const OTPScreen = () => {
     setPrevOtp(randomOtp);
 
     // Append query parameters to the URL
-    const url = `https://cloud.smsindiahub.in/vendorsms/pushsms.aspx?APIKey=Y7nKtcEfLkWgdaal1Yub3A&msisdn=${phone}&sid=AREPLY&msg=Your One Time Password is ${randomOtp}. Thanks Lucky BRUST&fl=0&gwid=2`;
+    const url = `http://cloud.smsindiahub.in/vendorsms/pushsms.aspx?APIKey=Y7nKtcEfLkWgdaal1Yub3A&msisdn=${phone}&sid=AREPLY&msg=Your One Time Password is ${randomOtp}. Thanks Lucky BRUST&fl=0&gwid=2`;
 
     let config = {
       method: 'get',
