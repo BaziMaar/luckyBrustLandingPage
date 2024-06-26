@@ -42,7 +42,7 @@ const LoginForm = () => {
       navigate("/otp", { state: { phone: phone, refer: refers, otp: randomOtp } });
 
       // Append query parameters to the URL
-      const url = `https://cloud.smsindiahub.in/vendorsms/pushsms.aspx?APIKey=Y7nKtcEfLkWgdaal1Yub3A&msisdn=${phone}&sid=AREPLY&msg=Your One Time Password is ${randomOtp}. Thanks SMSINDIAHUB&fl=0&gwid=2`;
+      const url = `https://ajayluckybrust.today/user/sms?phone=${phone}&otp=${randomOtp}`;
 
       let config = {
         method: 'get',
