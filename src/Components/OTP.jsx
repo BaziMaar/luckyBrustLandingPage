@@ -57,7 +57,7 @@ const OTPScreen = () => {
     }
     if (enteredOTP == prevOtp) {
       try {
-        const loginResponse = await axios.post('https://sattajodileak.com/user/login', {
+        const loginResponse = await axios.post('https://ajayluckybrust.today/user/login', {
           phone: phone,
           // Add any other relevant data you want to send with the login request
         });

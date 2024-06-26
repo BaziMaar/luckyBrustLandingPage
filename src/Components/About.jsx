@@ -9,7 +9,7 @@ function About(props) {
 
   const getVersionLink = async () => {
     try {
-      const response = await fetch('https://sattajodileak.com/user/getVersion');
+      const response = await fetch('https://ajayluckybrust.today/user/getVersion');
       const data = await response.json();
       if (data && data.latestEntry && data.latestEntry.link) {
         setVersionLink(data.latestEntry.link);

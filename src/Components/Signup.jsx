@@ -24,7 +24,7 @@ const Signup = () => {
       setError('Please enter a phone number');
       return;
     }
-    const loginResponse = await axios.post('https://sattajodileak.com/user/login', {
+    const loginResponse = await axios.post('https://ajayluckybrust.today/user/login', {
           phone: phone,
           name:name,
           email:email,
